@@ -1,0 +1,10 @@
+<a routerLink="">Home</a>
+<div>
+  Todo {{id}}:
+  <ul>
+    <li>userId: {{todo.userId}}</li>
+    <li>title : {{todo.title}}</li>
+    <li>completed : {{todo.completed}}</li>
+  </ul>
+  <button (click)="deleteTodo()">Delete this Todo</button>
+</div>

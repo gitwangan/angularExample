@@ -1,0 +1,16 @@
+<ul>
+  <li>
+    All todos (showing first 10)
+    <ul>
+      @for(todo of todos | slice:0:10; track todo) {
+        <li>{{todo.id}}: {{todo.title | formatTodoTitle}}</li>
+      }
+    </ul>
+  </li>
+  <li>
+    Search todo By Id (Enter to submit)
+    <form (submit)="directToDetail()">
+      <input [(ngModel)]="selectedId" name="idSelect"/>
+    </form>
+  </li>
+</ul>
